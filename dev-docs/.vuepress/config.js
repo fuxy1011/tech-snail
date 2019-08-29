@@ -1,4 +1,5 @@
 module.exports = {
+    dest: 'docs',
     base: '/tech-snail/',
     title: '蜗牛🐌不牛',
     description: '技术方面的沉淀，积累',
