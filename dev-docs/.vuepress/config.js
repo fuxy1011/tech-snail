@@ -55,13 +55,14 @@ module.exports = {
 	            link: 'https://github.com/fuxy1011/tech-snail'
         	}
         ],
-        sidebarDepth: 2,
+        sidebarDepth: 1,
         sidebar: {
             '/base/': [{
                 title: '基础',
                 collapsable: false,
                 children: [
-                    ''
+                    '',
+                    '/base/js-run-origin.md'
                 ]
             }],
             '/important-base/': [{
