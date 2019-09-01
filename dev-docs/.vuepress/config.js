@@ -62,7 +62,8 @@ module.exports = {
                 collapsable: false,
                 children: [
                     '',
-                    '/base/js-run-origin.md'
+                    '/base/js-run-origin.md',
+                    '/base/css-box.md'
                 ]
             }],
             '/important-base/': [{
