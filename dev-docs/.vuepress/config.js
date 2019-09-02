@@ -17,39 +17,43 @@ module.exports = {
             //     text: 'React',
             //     link: '/react/'
             // },
-            // {
-            //     text: 'snail',
-            //     items: [
-            //         {
-            //             text: '技术广度',
-            //             link: '/tech-world/'
-            //         },
-            //         {
-            //             text: '源码分析',
-            //             link: '/source-analysis/'
-            //         },
-            //         {
-            //             text: '实验室',
-            //             link: '/todo-demo/'
-            //         },
-            //         {
-            //             text: '蜗牛计划',
-            //             link: '/snail/'
-            //         },
-            //         {
-            //             text: '工具箱',
-            //             link: '/toolkit/'
-            //         },
-            //         {
-            //             text: '组件库',
-            //             link: '/component/'
-            //         },
-            //         {
-            //             text: '关于我',
-            //             link: '/about/'
-            //         }
-            //     ]
-            // },
+            {
+                text: 'snail',
+                items: [
+                    {
+                        text: '蜗牛小册子',
+                        link: '/snail-book/'
+                    },
+                    // {
+                    //     text: '技术广度',
+                    //     link: '/tech-world/'
+                    // },
+                    // {
+                    //     text: '源码分析',
+                    //     link: '/source-analysis/'
+                    // },
+                    // {
+                    //     text: '实验室',
+                    //     link: '/todo-demo/'
+                    // },
+                    // {
+                    //     text: '蜗牛计划',
+                    //     link: '/snail/'
+                    // },
+                    // {
+                    //     text: '工具箱',
+                    //     link: '/toolkit/'
+                    // },
+                    // {
+                    //     text: '组件库',
+                    //     link: '/component/'
+                    // },
+                    // {
+                    //     text: '关于我',
+                    //     link: '/about/'
+                    // }
+                ]
+            },
         	{
 	            text: 'GitHub',
 	            link: 'https://github.com/fuxy1011/tech-snail'
@@ -66,6 +70,13 @@ module.exports = {
                     '/base/css-box.md',
                     '/base/self-code.md',
                     '/base/http.md'
+                ]
+            }],
+            '/snail-book': [{
+                title: '蜗牛小册子',
+                collapsable: false,
+                children: [
+                    '/snail-book/1909.md'
                 ]
             }],
             '/important-base/': [{
