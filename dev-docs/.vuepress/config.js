@@ -63,7 +63,8 @@ module.exports = {
                 children: [
                     '',
                     '/base/js-run-origin.md',
-                    '/base/css-box.md'
+                    '/base/css-box.md',
+                    '/base/self-code.md'
                 ]
             }],
             '/important-base/': [{
