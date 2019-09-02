@@ -64,7 +64,8 @@ module.exports = {
                     '',
                     '/base/js-run-origin.md',
                     '/base/css-box.md',
-                    '/base/self-code.md'
+                    '/base/self-code.md',
+                    '/base/http.md'
                 ]
             }],
             '/important-base/': [{
