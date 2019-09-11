@@ -69,7 +69,9 @@ module.exports = {
                     '/base/js-run-origin.md',
                     '/base/css-box.md',
                     '/base/self-code.md',
-                    '/base/http.md'
+                    '/base/http.md',
+                    '/base/extends.md',
+                    '/base/es6.md'
                 ]
             }],
             '/snail-book': [{
