@@ -4,6 +4,8 @@
 * [css盒子模型](./css-box.md)
 * [手写代码](./self-code.md)
 * [http](./http.md)
+* [js继承](./extends.md)
+* [ES6](./es6.md)
 
 
 <!-- * 切图高手  
