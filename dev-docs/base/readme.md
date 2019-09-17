@@ -7,6 +7,7 @@
 * [js继承](./extends.md)
 * [ES6](./es6.md)
 * [ajax](./ajax.md)
+* [js原型](./prototype.md)
 
 
 <!-- * 切图高手  

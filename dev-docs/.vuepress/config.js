@@ -72,7 +72,8 @@ module.exports = {
                     '/base/http.md',
                     '/base/extends.md',
                     '/base/es6.md',
-                    '/base/ajax.md'
+                    '/base/ajax.md',
+                    '/base/prototype.md'
                 ]
             }],
             '/snail-book': [{
