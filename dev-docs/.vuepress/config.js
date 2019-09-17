@@ -71,7 +71,8 @@ module.exports = {
                     '/base/self-code.md',
                     '/base/http.md',
                     '/base/extends.md',
-                    '/base/es6.md'
+                    '/base/es6.md',
+                    '/base/ajax.md'
                 ]
             }],
             '/snail-book': [{

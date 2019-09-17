@@ -6,6 +6,7 @@
 * [http](./http.md)
 * [js继承](./extends.md)
 * [ES6](./es6.md)
+* [ajax](./ajax.md)
 
 
 <!-- * 切图高手  
