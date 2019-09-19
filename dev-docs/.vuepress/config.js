@@ -36,10 +36,10 @@ module.exports = {
                     //     text: '实验室',
                     //     link: '/todo-demo/'
                     // },
-                    // {
-                    //     text: '蜗牛计划',
-                    //     link: '/snail/'
-                    // },
+                    {
+                        text: '乌龟计划',
+                        link: '/snail/'
+                    },
                     // {
                     //     text: '工具箱',
                     //     link: '/toolkit/'
@@ -119,7 +119,6 @@ module.exports = {
                 ]
             }],
             '/snail/': [{
-                title: '蜗牛计划',
                 collapsable: false,
                 children: [
                     ''
