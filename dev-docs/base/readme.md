@@ -8,6 +8,7 @@
 * [ES6](./es6.md)
 * [ajax](./ajax.md)
 * [js原型](./prototype.md)
+* [js闭包](./closure.md)
 
 
 <!-- * 切图高手  
