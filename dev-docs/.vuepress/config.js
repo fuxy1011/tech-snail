@@ -13,10 +13,10 @@ module.exports = {
 	        //     text: '烧脑基础',
 	        //     link: '/important-base/'
         	// },
-            // {
-            //     text: 'React',
-            //     link: '/react/'
-            // },
+            {
+                text: 'React',
+                link: '/react/'
+            },
             {
                 text: 'snail',
                 items: [
@@ -73,7 +73,8 @@ module.exports = {
                     '/base/extends.md',
                     '/base/es6.md',
                     '/base/ajax.md',
-                    '/base/prototype.md'
+                    '/base/prototype.md',
+                    '/base/closure.md'
                 ]
             }],
             '/snail-book': [{
@@ -94,7 +95,8 @@ module.exports = {
                 title: 'React',
                 collapsable: false,
                 children: [
-                    ''
+                    '/react/lifecycle.md',
+                    '/react/databind.md'
                 ]
             }],
             '/tech-world/': [{
