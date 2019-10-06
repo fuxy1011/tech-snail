@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>如何实现居中对齐？ | 蜗牛🐌不牛</title>
+    <meta name="description" content="技术方面的沉淀，积累">
+    
+    
+    <link rel="preload" href="/tech-snail/assets/css/0.styles.85bd4d7d.css" as="style"><link rel="preload" href="/tech-snail/assets/js/app.4c5b9ae3.js" as="script"><link rel="preload" href="/tech-snail/assets/js/2.74f073be.js" as="script"><link rel="preload" href="/tech-snail/assets/js/16.3cabf0dc.js" as="script"><link rel="prefetch" href="/tech-snail/assets/js/10.5aac2175.js"><link rel="prefetch" href="/tech-snail/assets/js/11.03b1ef6c.js"><link rel="prefetch" href="/tech-snail/assets/js/12.c85ff886.js"><link rel="prefetch" href="/tech-snail/assets/js/13.777bbe7b.js"><link rel="prefetch" href="/tech-snail/assets/js/14.0d40f367.js"><link rel="prefetch" href="/tech-snail/assets/js/15.24c7810d.js"><link rel="prefetch" href="/tech-snail/assets/js/17.ff587f67.js"><link rel="prefetch" href="/tech-snail/assets/js/18.11ebd7f7.js"><link rel="prefetch" href="/tech-snail/assets/js/19.75b46338.js"><link rel="prefetch" href="/tech-snail/assets/js/20.791a6437.js"><link rel="prefetch" href="/tech-snail/assets/js/21.7b1883dc.js"><link rel="prefetch" href="/tech-snail/assets/js/22.f0b5282a.js"><link rel="prefetch" href="/tech-snail/assets/js/23.84244ee1.js"><link rel="prefetch" href="/tech-snail/assets/js/24.743ac1a7.js"><link rel="prefetch" href="/tech-snail/assets/js/25.ed96f64c.js"><link rel="prefetch" href="/tech-snail/assets/js/26.f8661cd0.js"><link rel="prefetch" href="/tech-snail/assets/js/27.3f8a762e.js"><link rel="prefetch" href="/tech-snail/assets/js/28.71968a68.js"><link rel="prefetch" href="/tech-snail/assets/js/29.15014548.js"><link rel="prefetch" href="/tech-snail/assets/js/3.28b1645d.js"><link rel="prefetch" href="/tech-snail/assets/js/30.a41be32a.js"><link rel="prefetch" href="/tech-snail/assets/js/31.1e0d28eb.js"><link rel="prefetch" href="/tech-snail/assets/js/32.3627ad42.js"><link rel="prefetch" href="/tech-snail/assets/js/33.7486ab0c.js"><link rel="prefetch" href="/tech-snail/assets/js/34.2cfcd120.js"><link rel="prefetch" href="/tech-snail/assets/js/35.bff30f74.js"><link rel="prefetch" href="/tech-snail/assets/js/36.9f75a711.js"><link rel="prefetch" href="/tech-snail/assets/js/37.046317d5.js"><link rel="prefetch" href="/tech-snail/assets/js/38.8c0b191e.js"><link rel="prefetch" href="/tech-snail/assets/js/39.4b4b1a32.js"><link rel="prefetch" href="/tech-snail/assets/js/4.fd51b5e1.js"><link rel="prefetch" href="/tech-snail/assets/js/40.08ce2c6f.js"><link rel="prefetch" href="/tech-snail/assets/js/41.df28bdc6.js"><link rel="prefetch" href="/tech-snail/assets/js/42.223ee88b.js"><link rel="prefetch" href="/tech-snail/assets/js/43.f40858b1.js"><link rel="prefetch" href="/tech-snail/assets/js/44.b87941a9.js"><link rel="prefetch" href="/tech-snail/assets/js/45.8539a39c.js"><link rel="prefetch" href="/tech-snail/assets/js/46.da15d9ad.js"><link rel="prefetch" href="/tech-snail/assets/js/47.1b93b2a4.js"><link rel="prefetch" href="/tech-snail/assets/js/48.e84e3089.js"><link rel="prefetch" href="/tech-snail/assets/js/49.600eef87.js"><link rel="prefetch" href="/tech-snail/assets/js/5.ac6cd6bc.js"><link rel="prefetch" href="/tech-snail/assets/js/50.bdbcbf1d.js"><link rel="prefetch" href="/tech-snail/assets/js/51.1c59a4f3.js"><link rel="prefetch" href="/tech-snail/assets/js/52.b77f9878.js"><link rel="prefetch" href="/tech-snail/assets/js/53.4d2da33a.js"><link rel="prefetch" href="/tech-snail/assets/js/54.af98227c.js"><link rel="prefetch" href="/tech-snail/assets/js/55.11870198.js"><link rel="prefetch" href="/tech-snail/assets/js/56.e4fb0222.js"><link rel="prefetch" href="/tech-snail/assets/js/57.0771be48.js"><link rel="prefetch" href="/tech-snail/assets/js/58.b4ec17cc.js"><link rel="prefetch" href="/tech-snail/assets/js/59.d6d41697.js"><link rel="prefetch" href="/tech-snail/assets/js/6.95c0a051.js"><link rel="prefetch" href="/tech-snail/assets/js/60.cdafb9fb.js"><link rel="prefetch" href="/tech-snail/assets/js/7.4c789e5c.js"><link rel="prefetch" href="/tech-snail/assets/js/8.40c80a4a.js"><link rel="prefetch" href="/tech-snail/assets/js/9.82a50eda.js">
+    <link rel="stylesheet" href="/tech-snail/assets/css/0.styles.85bd4d7d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/tech-snail/" class="home-link router-link-active"><!----> <span class="site-name">蜗牛🐌不牛</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/tech-snail/base/" class="nav-link router-link-active">基础</a></div><div class="nav-item"><a href="/tech-snail/react/" class="nav-link">React</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">snail</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tech-snail/snail-book/" class="nav-link">蜗牛小册子</a></li><li class="dropdown-item"><!----> <a href="/tech-snail/snail/" class="nav-link">乌龟计划</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/fuxy1011/tech-snail" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/tech-snail/base/" class="nav-link router-link-active">基础</a></div><div class="nav-item"><a href="/tech-snail/react/" class="nav-link">React</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">snail</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tech-snail/snail-book/" class="nav-link">蜗牛小册子</a></li><li class="dropdown-item"><!----> <a href="/tech-snail/snail/" class="nav-link">乌龟计划</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/fuxy1011/tech-snail" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>基础</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/tech-snail/base/" class="sidebar-link">以终为始,目标回溯</a></li><li><a href="/tech-snail/base/js-run-origin.html" class="sidebar-link">js运行机制</a></li><li><a href="/tech-snail/base/css-box.html" class="sidebar-link">盒子模型</a></li><li><a href="/tech-snail/base/self-code.html" class="sidebar-link">手写代码</a></li><li><a href="/tech-snail/base/http.html" class="sidebar-link">HTTP</a></li><li><a href="/tech-snail/base/extends.html" class="sidebar-link">继承</a></li><li><a href="/tech-snail/base/es6.html" class="sidebar-link">ES6</a></li><li><a href="/tech-snail/base/ajax.html" class="sidebar-link">ajax</a></li><li><a href="/tech-snail/base/prototype.html" class="sidebar-link">js原型</a></li><li><a href="/tech-snail/base/closure.html" class="sidebar-link">js闭包</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="如何实现居中对齐？"><a href="#如何实现居中对齐？" aria-hidden="true" class="header-anchor">#</a> 如何实现居中对齐？</h1> <blockquote><p>题目：如何实现水平居中？</p></blockquote> <h2 id="水平居中"><a href="#水平居中" aria-hidden="true" class="header-anchor">#</a> 水平居中</h2> <p>inline 元素用text-align: center;即可，如下：</p> <div class="language- extra-class"><pre class="language-text"><code>.container {
+   text-align: center;
+}
+</code></pre></div><p>block 元素可使用margin: auto;，PC 时代的很多网站都这么搞。</p> <div class="language- extra-class"><pre class="language-text"><code>.container {
+    text-align: center; 
+}
+.item {
+    width: 1000px;
+    margin: auto; 
+}
+</code></pre></div><p>绝对定位元素可结合left和margin实现，但是必须知道宽度。</p> <div class="language- extra-class"><pre class="language-text"><code>.container {
+    position: relative;
+    width: 500px;
+}
+.item {
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    margin: -150px;
+}
+</code></pre></div><blockquote><p>题目：如何实现垂直居中？</p></blockquote> <h2 id="垂直居中"><a href="#垂直居中" aria-hidden="true" class="header-anchor">#</a> 垂直居中</h2> <p>inline 元素可设置line-height的值等于height值，如单行文字垂直居中：</p> <div class="language- extra-class"><pre class="language-text"><code>.container {
+   height: 50px;
+   line-height: 50px;
+}
+</code></pre></div><p>绝对定位元素，可结合left和margin实现，但是必须知道尺寸。</p> <ul><li>优点：兼容性好</li> <li>缺点：需要提前知道尺寸</li></ul> <div class="language- extra-class"><pre class="language-text"><code>.container {
+    position: relative;
+    height: 200px;
+}
+.item {
+    width: 80px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -20px;
+    margin-left: -40px;
+}
+</code></pre></div><p>绝对定位可结合transform实现居中。</p> <ul><li>优点：不需要提前知道尺寸</li> <li>缺点：兼容性不好</li></ul> <div class="language- extra-class"><pre class="language-text"><code>.container {
+    position: relative;
+    height: 200px;
+}
+.item {
+    width: 80px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: blue;
+}
+</code></pre></div><p>绝对定位结合margin: auto，不需要提前知道尺寸，兼容性好。</p> <div class="language- extra-class"><pre class="language-text"><code>.container {
+    position: relative;
+    height: 300px;
+}
+.item {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+</code></pre></div><p>其他的解决方案还有，不过没必要掌握太多，能说出上文的这几个解决方案即可。</p> <h2 id="参考网址"><a href="#参考网址" aria-hidden="true" class="header-anchor">#</a> 参考网址</h2> <p><a href="">掘进小册</a></p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/tech-snail/assets/js/app.4c5b9ae3.js" defer></script><script src="/tech-snail/assets/js/2.74f073be.js" defer></script><script src="/tech-snail/assets/js/16.3cabf0dc.js" defer></script>
+  </body>
+</html>

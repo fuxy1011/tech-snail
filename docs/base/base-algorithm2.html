@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>人人都要掌握的基础算法 | 蜗牛🐌不牛</title>
+    <meta name="description" content="技术方面的沉淀，积累">
+    
+    
+    <link rel="preload" href="/tech-snail/assets/css/0.styles.85bd4d7d.css" as="style"><link rel="preload" href="/tech-snail/assets/js/app.4c5b9ae3.js" as="script"><link rel="preload" href="/tech-snail/assets/js/2.74f073be.js" as="script"><link rel="preload" href="/tech-snail/assets/js/13.777bbe7b.js" as="script"><link rel="prefetch" href="/tech-snail/assets/js/10.5aac2175.js"><link rel="prefetch" href="/tech-snail/assets/js/11.03b1ef6c.js"><link rel="prefetch" href="/tech-snail/assets/js/12.c85ff886.js"><link rel="prefetch" href="/tech-snail/assets/js/14.0d40f367.js"><link rel="prefetch" href="/tech-snail/assets/js/15.24c7810d.js"><link rel="prefetch" href="/tech-snail/assets/js/16.3cabf0dc.js"><link rel="prefetch" href="/tech-snail/assets/js/17.ff587f67.js"><link rel="prefetch" href="/tech-snail/assets/js/18.11ebd7f7.js"><link rel="prefetch" href="/tech-snail/assets/js/19.75b46338.js"><link rel="prefetch" href="/tech-snail/assets/js/20.791a6437.js"><link rel="prefetch" href="/tech-snail/assets/js/21.7b1883dc.js"><link rel="prefetch" href="/tech-snail/assets/js/22.f0b5282a.js"><link rel="prefetch" href="/tech-snail/assets/js/23.84244ee1.js"><link rel="prefetch" href="/tech-snail/assets/js/24.743ac1a7.js"><link rel="prefetch" href="/tech-snail/assets/js/25.ed96f64c.js"><link rel="prefetch" href="/tech-snail/assets/js/26.f8661cd0.js"><link rel="prefetch" href="/tech-snail/assets/js/27.3f8a762e.js"><link rel="prefetch" href="/tech-snail/assets/js/28.71968a68.js"><link rel="prefetch" href="/tech-snail/assets/js/29.15014548.js"><link rel="prefetch" href="/tech-snail/assets/js/3.28b1645d.js"><link rel="prefetch" href="/tech-snail/assets/js/30.a41be32a.js"><link rel="prefetch" href="/tech-snail/assets/js/31.1e0d28eb.js"><link rel="prefetch" href="/tech-snail/assets/js/32.3627ad42.js"><link rel="prefetch" href="/tech-snail/assets/js/33.7486ab0c.js"><link rel="prefetch" href="/tech-snail/assets/js/34.2cfcd120.js"><link rel="prefetch" href="/tech-snail/assets/js/35.bff30f74.js"><link rel="prefetch" href="/tech-snail/assets/js/36.9f75a711.js"><link rel="prefetch" href="/tech-snail/assets/js/37.046317d5.js"><link rel="prefetch" href="/tech-snail/assets/js/38.8c0b191e.js"><link rel="prefetch" href="/tech-snail/assets/js/39.4b4b1a32.js"><link rel="prefetch" href="/tech-snail/assets/js/4.fd51b5e1.js"><link rel="prefetch" href="/tech-snail/assets/js/40.08ce2c6f.js"><link rel="prefetch" href="/tech-snail/assets/js/41.df28bdc6.js"><link rel="prefetch" href="/tech-snail/assets/js/42.223ee88b.js"><link rel="prefetch" href="/tech-snail/assets/js/43.f40858b1.js"><link rel="prefetch" href="/tech-snail/assets/js/44.b87941a9.js"><link rel="prefetch" href="/tech-snail/assets/js/45.8539a39c.js"><link rel="prefetch" href="/tech-snail/assets/js/46.da15d9ad.js"><link rel="prefetch" href="/tech-snail/assets/js/47.1b93b2a4.js"><link rel="prefetch" href="/tech-snail/assets/js/48.e84e3089.js"><link rel="prefetch" href="/tech-snail/assets/js/49.600eef87.js"><link rel="prefetch" href="/tech-snail/assets/js/5.ac6cd6bc.js"><link rel="prefetch" href="/tech-snail/assets/js/50.bdbcbf1d.js"><link rel="prefetch" href="/tech-snail/assets/js/51.1c59a4f3.js"><link rel="prefetch" href="/tech-snail/assets/js/52.b77f9878.js"><link rel="prefetch" href="/tech-snail/assets/js/53.4d2da33a.js"><link rel="prefetch" href="/tech-snail/assets/js/54.af98227c.js"><link rel="prefetch" href="/tech-snail/assets/js/55.11870198.js"><link rel="prefetch" href="/tech-snail/assets/js/56.e4fb0222.js"><link rel="prefetch" href="/tech-snail/assets/js/57.0771be48.js"><link rel="prefetch" href="/tech-snail/assets/js/58.b4ec17cc.js"><link rel="prefetch" href="/tech-snail/assets/js/59.d6d41697.js"><link rel="prefetch" href="/tech-snail/assets/js/6.95c0a051.js"><link rel="prefetch" href="/tech-snail/assets/js/60.cdafb9fb.js"><link rel="prefetch" href="/tech-snail/assets/js/7.4c789e5c.js"><link rel="prefetch" href="/tech-snail/assets/js/8.40c80a4a.js"><link rel="prefetch" href="/tech-snail/assets/js/9.82a50eda.js">
+    <link rel="stylesheet" href="/tech-snail/assets/css/0.styles.85bd4d7d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/tech-snail/" class="home-link router-link-active"><!----> <span class="site-name">蜗牛🐌不牛</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/tech-snail/base/" class="nav-link router-link-active">基础</a></div><div class="nav-item"><a href="/tech-snail/react/" class="nav-link">React</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">snail</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tech-snail/snail-book/" class="nav-link">蜗牛小册子</a></li><li class="dropdown-item"><!----> <a href="/tech-snail/snail/" class="nav-link">乌龟计划</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/fuxy1011/tech-snail" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/tech-snail/base/" class="nav-link router-link-active">基础</a></div><div class="nav-item"><a href="/tech-snail/react/" class="nav-link">React</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">snail</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tech-snail/snail-book/" class="nav-link">蜗牛小册子</a></li><li class="dropdown-item"><!----> <a href="/tech-snail/snail/" class="nav-link">乌龟计划</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/fuxy1011/tech-snail" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>基础</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/tech-snail/base/" class="sidebar-link">以终为始,目标回溯</a></li><li><a href="/tech-snail/base/js-run-origin.html" class="sidebar-link">js运行机制</a></li><li><a href="/tech-snail/base/css-box.html" class="sidebar-link">盒子模型</a></li><li><a href="/tech-snail/base/self-code.html" class="sidebar-link">手写代码</a></li><li><a href="/tech-snail/base/http.html" class="sidebar-link">HTTP</a></li><li><a href="/tech-snail/base/extends.html" class="sidebar-link">继承</a></li><li><a href="/tech-snail/base/es6.html" class="sidebar-link">ES6</a></li><li><a href="/tech-snail/base/ajax.html" class="sidebar-link">ajax</a></li><li><a href="/tech-snail/base/prototype.html" class="sidebar-link">js原型</a></li><li><a href="/tech-snail/base/closure.html" class="sidebar-link">js闭包</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="人人都要掌握的基础算法"><a href="#人人都要掌握的基础算法" aria-hidden="true" class="header-anchor">#</a> 人人都要掌握的基础算法</h1> <p>枚举和递归是最最简单的算法，也是复杂算法的基础，人人都应该掌握！枚举相对比较简单，我们重点说下递归。</p> <p>递归由下面两部分组成：</p> <ul><li>递归主体，就是要循环解决问题的代码</li> <li>递归的跳出条件，递归不能一直递归下去，需要完成一定条件后跳出</li></ul> <p>关于递归有个经典的面试题目是：</p> <blockquote><p>实现 JS 对象的深拷贝</p></blockquote> <h2 id="什么是深拷贝？"><a href="#什么是深拷贝？" aria-hidden="true" class="header-anchor">#</a> 什么是深拷贝？</h2> <p>「深拷贝」就是在拷贝数据的时候，将数据的所有引用结构都拷贝一份。简单的说就是，在内存中存在两个数据结构完全相同又相互独立的数据，将引用型类型进行复制，而不是只复制其引用关系。</p> <p>分析下怎么做「深拷贝」：</p> <ul><li>首先假设深拷贝这个方法已经完成，为 deepClone</li> <li>要拷贝一个数据，我们肯定要去遍历它的属性，如果这个对象的属性仍是对象，继续使用这个方法，如此往复</li></ul> <div class="language- extra-class"><pre class="language-text"><code>function deepClone(o1, o2) {
+    for (let k in o2) {
+        if (typeof o2[k] === 'object') {
+            o1[k] = {};
+            deepClone(o1[k], o2[k]);
+        } else {
+            o1[k] = o2[k];
+        }
+    }
+}
+// 测试用例
+let obj = {
+    a: 1,
+    b: [1, 2, 3],
+    c: {}
+};
+let emptyObj = Object.create(null);
+deepClone(emptyObj, obj);
+console.log(emptyObj.a == obj.a);
+console.log(emptyObj.b == obj.b);
+</code></pre></div><p>递归容易造成爆栈，尾部调用可以解决递归的这个问题，Chrome 的 V8 引擎做了尾部调用优化，我们在写代码的时候也要注意尾部调用写法。递归的爆栈问题可以通过将递归改写成枚举的方式来解决，就是通过for或者while来代替递归。</p> <p>我们在使用递归的时候，要注意做优化，比如下面的题目。</p> <blockquote><p>题目：求斐波那契数列（兔子数列） 1,1,2,3,5,8,13,21,34,55,89...中的第 n 项</p></blockquote> <p>下面的代码中count记录递归的次数，我们看下两种差异性的代码中的count的值：</p> <div class="language- extra-class"><pre class="language-text"><code>let count = 0;
+function fn(n) {
+    let cache = {};
+    function _fn(n) {
+        if (cache[n]) {
+            return cache[n];
+        }
+        count++;
+        if (n == 1 || n == 2) {
+            return 1;
+        }
+        let prev = _fn(n - 1);
+        cache[n - 1] = prev;
+        let next = _fn(n - 2);
+        cache[n - 2] = next;
+        return prev + next;
+    }
+    return _fn(n);
+}
+
+let count2 = 0;
+function fn2(n) {
+    count2++;
+    if (n == 1 || n == 2) {
+        return 1;
+    }
+    return fn2(n - 1) + fn2(n - 2);
+}
+
+console.log(fn(20), count); // 6765 20
+console.log(fn2(20), count2); // 6765 13529
+</code></pre></div><h2 id="快排和二分查找"><a href="#快排和二分查找" aria-hidden="true" class="header-anchor">#</a> 快排和二分查找</h2> <p>前端中面试排序和查找的可能性比较小，因为 JS 引擎已经把这些常用操作优化得很好了，可能项目中你费劲写的一个排序方法，都不如Array.sort速度快且代码少。因此，掌握快排和二分查找就可以了。</p> <p>快排和二分查找都基于一种叫做「分治」的算法思想，通过对数据进行分类处理，不断降低数量级，实现O(logN)（对数级别，比O(n)这种线性复杂度更低的一种，快排核心是二分法的O(logN)，实际复杂度为O(N*logN)）的复杂度。</p> <h3 id="快速排序"><a href="#快速排序" aria-hidden="true" class="header-anchor">#</a> 快速排序</h3> <p>快排大概的流程是：</p> <ul><li>随机选择数组中的一个数 A，以这个数为基准</li> <li>其他数字跟这个数进行比较，比这个数小的放在其左边，大的放到其右边</li> <li>经过一次循环之后，A 左边为小于 A 的，右边为大于 A 的</li> <li>这时候将左边和右边的数再递归上面的过程</li></ul> <p>具体代码如下：</p> <div class="language- extra-class"><pre class="language-text"><code>// 划分操作函数
+function partition(array, left, right) {
+    // 用index取中间值而非splice
+    const pivot = array[Math.floor((right + left) / 2)]
+    let i = left
+    let j = right
+
+    while (i &lt;= j) {
+        while (compare(array[i], pivot) === -1) {
+            i++
+        }
+        while (compare(array[j], pivot) === 1) {
+            j--
+        }
+        if (i &lt;= j) {
+            swap(array, i, j)
+            i++
+            j--
+        }
+    }
+    return i
+}
+
+// 比较函数
+function compare(a, b) {
+    if (a === b) {
+        return 0
+    }
+    return a &lt; b ? -1 : 1
+}
+
+function quick(array, left, right) {
+    let index
+    if (array.length &gt; 1) {
+        index = partition(array, left, right)
+        if (left &lt; index - 1) {
+            quick(array, left, index - 1)
+        }
+        if (index &lt; right) {
+            quick(array, index, right)
+        }
+    }
+    return array
+}
+function quickSort(array) {
+    return quick(array, 0, array.length - 1)
+}
+
+// 原地交换函数，而非用临时数组
+function swap(array, a, b) {
+    ;[array[a], array[b]] = [array[b], array[a]]
+}
+const Arr = [85, 24, 63, 45, 17, 31, 96, 50];
+console.log(quickSort(Arr));
+// 本版本来自：https://juejin.im/post/5af4902a6fb9a07abf728c40#heading-12
+</code></pre></div><h3 id="二分查找"><a href="#二分查找" aria-hidden="true" class="header-anchor">#</a> 二分查找</h3> <p>二分查找法主要是解决「在一堆有序的数中找出指定的数」这类问题，不管这些数是一维数组还是多维数组，只要有序，就可以用二分查找来优化。</p> <p>二分查找是一种「分治」思想的算法，大概流程如下：</p> <ul><li>数组中排在中间的数字 A，与要找的数字比较大小</li> <li>因为数组是有序的，所以： a) A 较大则说明要查找的数字应该从前半部分查找 b) A 较小则说明应该从查找数字的后半部分查找</li> <li>这样不断查找缩小数量级（扔掉一半数据），直到找完数组为止</li></ul> <blockquote><p>题目：在一个二维数组中，每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>function Find(target, array) {
+    let i = 0;
+    let j = array[i].length - 1;
+    while (i &lt; array.length &amp;&amp; j &gt;= 0) {
+        if (array[i][j] &lt; target) {
+            i++;
+        } else if (array[i][j] &gt; target) {
+            j--;
+        } else {
+            return true;
+        }
+    }
+    return false;
+}
+
+//测试用例
+console.log(Find(10, [
+    [1, 2, 3, 4], 
+    [5, 9, 10, 11], 
+    [13, 20, 21, 23]
+    ])
+);
+</code></pre></div><p>另外笔者在面试中遇见过下面的问题：</p> <blockquote><p>题目：现在我有一个 1~1000 区间中的正整数，需要你猜下这个数字是几，你只能问一个问题：大了还是小了？问需要猜几次才能猜对？</p></blockquote> <p>拿到这个题目，笔者想到的就是电视上面有个「猜价格」的购物节目，在规定时间内猜对价格就可以把实物抱回家。所以问题就是让面试官不停地回答我猜的数字比这个数字大了还是小了。这就是二分查找！</p> <p>猜几次呢？其实这个问题就是个二分查找的算法时间复杂度问题，二分查找的时间复杂度是O(logN)，所以求log1000的解就是猜的次数。我们知道2^10=1024，所以可以快速估算出：log1000约等于 10，最多问 10 次就能得到这个数！</p> <h2 id="面试遇见不会的算法问题怎么办"><a href="#面试遇见不会的算法问题怎么办" aria-hidden="true" class="header-anchor">#</a> 面试遇见不会的算法问题怎么办</h2> <p>面试的时候，在遇见算法题目的时候，应该揣摩面试官的意图，听好关键词，比如：有序的数列做查找、要求算法复杂度是O(logN)这类一般就是用二分的思想。</p> <p>一般来说算法题目的解题思路分以下四步：</p> <ul><li>先降低数量级，拿可以计算出来的情况（数据）来构思解题步骤</li> <li>根据解题步骤编写程序，优先将特殊情况做好判断处理，比如一个大数组的问题，如果数组为两个数长度的情况</li> <li>检验程序正确性</li> <li>是否可以优化（由浅到深），有能力的话可以故意预留优化点，这样可以体现个人技术能力</li></ul> <h2 id="正则匹配解题"><a href="#正则匹配解题" aria-hidden="true" class="header-anchor">#</a> 正则匹配解题</h2> <p>很多算法题目利用 ES 语法的特性来回答更加简单，比如正则匹配就是常用的一种方式。笔者简单通过几个真题来汇总下正则的知识点。</p> <blockquote><p>题目：字符串中第一个出现一次的字符</p></blockquote> <p>请实现一个函数用来找出字符流中第一个只出现一次的字符。例如，当从字符流中只读出前两个字符「go」时，第一个只出现一次的字符是「g」。当从该字符流中读出前六个字符「google」时，第一个只出现一次的字符是「l」。</p> <p>这个如果用纯算法来解答需要遍历字符串，统计每个字符出现的次数，然后按照字符串的顺序来找出第一次出现一次的字符，整个过程比较繁琐，如果用正则就简单多了。</p> <div class="language- extra-class"><pre class="language-text"><code>function find(str){
+    for (var i = 0; i &lt; str.length; i++) {
+        let char = str[i]
+        let reg = new RegExp(char, 'g');
+        let l = str.match(reg).length
+        if(l===1){
+            return char
+        }
+    }
+}
+</code></pre></div><p>当然，使用indexOf/lastIndexOf也是一个取巧的方式。再来看一个千分位问题。</p> <blockquote><p>题目：将1234567 变成 1,234,567，即千分位标注</p></blockquote> <p>这个题目可以用算法直接来解，如果候选人使用正则来回答，这样主动展现了自己其他方面的优势，即使不是算法解答出来的，面试官一般也不会太难为他。这道题目可以利用正则的「零宽断言」(?=exp)，意思是它断言自身出现的位置的后面能匹配表达式 exp。数字千分位的特点是，第一个逗号后面数字的个数是3的倍数，正则：/(\d{3})+$/；第一个逗号前最多可以有 1~3 个数字，正则：/\d{1,3}/。加起来就是/\d{1,3}(\d{3})+$/，分隔符要从前往后加。</p> <p>对于零宽断言的详细介绍可以阅读「零宽断言」这篇文章。</p> <div class="language- extra-class"><pre class="language-text"><code>function exchange(num) {
+    num += ''; //转成字符串
+    if (num.length &lt;= 3) {
+        return num;
+    }
+
+    num = num.replace(/\d{1,3}(?=(\d{3})+$)/g, (v) =&gt; {
+        console.log(v)
+        return v + ',';
+    });
+    return num;
+}
+
+console.log(exchange(1234567));
+</code></pre></div><p>当然上面讲到的多数是算法题目取巧的方式，下面这个题目是纯正则考查，笔者在面试的过程中碰见过，这里顺便提一下。</p> <blockquote><p>题目，请写出下面的代码执行结果</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>var str = 'google';
+var reg = /o/g;
+console.log(reg.test(str))
+console.log(reg.test(str))
+console.log(reg.test(str))
+</code></pre></div><p>代码执行后，会发现，最后一个不是为true，而是false，这是因为reg这个正则有个g，即global全局的属性，这种情况下lastIndex就发挥作用了，可以看下面的代码执行结果就明白了。</p> <div class="language- extra-class"><pre class="language-text"><code>console.log(reg.test(str), reg.lastIndex)
+console.log(reg.test(str), reg.lastIndex)
+console.log(reg.test(str), reg.lastIndex)
+</code></pre></div><p>实际开发中也会犯这样的错误，比如为了减少变量每次都重新定义，会把用到的变量提前定义好，这样在使用的时候容易掉进坑里，比如下面代码：</p> <div class="language- extra-class"><pre class="language-text"><code>(function(){
+    const reg = /o/g;
+    function isHasO(str){
+        // reg.lastIndex = 0; 这样就可以避免这种情况
+        return reg.test(str)
+    }
+    var str = 'google';
+    console.log(isHasO(str))
+    console.log(isHasO(str))
+    console.log(isHasO(str))
+}())
+</code></pre></div><h2 id="小结"><a href="#小结" aria-hidden="true" class="header-anchor">#</a> 小结</h2> <p>本小节介绍了数据结构和算法的关系，作为普通的前端也应该学习数据结构和算法知识，并且顺带介绍了下正则匹配。具体来说，本小节梳理了以下几部分数据结构和算法知识点：</p> <ul><li>经常用到的数据结构有哪些，它们的特点有哪些</li> <li>递归和枚举是最基础的算法，必须牢牢掌握</li> <li>排序里面理解并掌握快速排序算法，其他排序算法可以根据个人实际情况大概了解</li> <li>有序查找用二分查找</li> <li>遇见不会的算法问题，先缩小数量级，然后分析推导</li></ul> <p>当然算法部分还有很多知识，比如动态规划这些算法思想，还有图和树常用到的广度优先搜索和深度优先搜索。这些知识在前端面试和项目中遇见得不多，感兴趣的读者可以在梳理知识点的时候根据个人情况自行决定是否复习。</p> <h2 id="参考网址"><a href="#参考网址" aria-hidden="true" class="header-anchor">#</a> 参考网址</h2> <p><a href="">掘进小册</a></p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/tech-snail/assets/js/app.4c5b9ae3.js" defer></script><script src="/tech-snail/assets/js/2.74f073be.js" defer></script><script src="/tech-snail/assets/js/13.777bbe7b.js" defer></script>
+  </body>
+</html>
