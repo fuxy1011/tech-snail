@@ -130,7 +130,8 @@ module.exports = {
                 title: '工具箱',
                 collapsable: false,
                 children: [
-                    ''
+                    '',
+                    '/toolkit/base-memory.md'
                 ]
             }],
             '/component/': [{
