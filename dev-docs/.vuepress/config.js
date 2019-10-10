@@ -134,6 +134,14 @@ module.exports = {
                     '/toolkit/base-memory.md'
                 ]
             }],
+            '/read-books/': [{
+                title: '读书',
+                collapsable: false,
+                children: [
+                    '',
+                    '/read-books/what-life-should-mean-to-you.md'
+                ]
+            }],
             '/component/': [{
                 title: '组件库',
                 collapsable: false,
