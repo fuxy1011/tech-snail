@@ -6,6 +6,7 @@ set -e
 # 生成静态文件
 npm run docs:build
 
+<<<<<<< HEAD
 # 进入生成的文件夹
 cd docs
 
@@ -14,6 +15,12 @@ git add -A
 git commit -m 'deploy'
 
 
+=======
+# 本地仓库提交
+git add -A
+git commit -m 'deploy'
+
+>>>>>>> develop
 # 提交到远程仓库
 git push
 
