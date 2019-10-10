@@ -12,6 +12,3 @@ git commit -m 'deploy'
 
 # 提交到远程仓库
 git push
-
-# 输出当前目录
-cd -
