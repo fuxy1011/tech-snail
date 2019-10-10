@@ -9,7 +9,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "docs:dev": "vuepress dev dev-docs",
-    "docs:build": "vuepress build dev-docs"
+    "docs:build": "vuepress build dev-docs",
+    "deploy": "bash deploy.sh"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/fuxy1011/tech-snail/issues"
   },
-  "homepage": "https://github.com/fuxy1011/tech-snail#readme"
+  "homepage": "https://github.com/fuxy1011/tech-snail#readme",
+  "devDependencies": {
+    "vuepress-plugin-baidu-google-analytics": "^1.0.0"
+  }
 }

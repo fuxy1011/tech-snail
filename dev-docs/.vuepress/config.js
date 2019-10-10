@@ -149,5 +149,11 @@ module.exports = {
                 ]
             }]
         }
-    }
+    },
+    plugins: [
+        ['vuepress-plugin-baidu-google-analytics', {
+          hm: '568d8cc1a88d56015fa25067311d5991',
+          ignore_hash: false
+        }]
+    ]
 }
