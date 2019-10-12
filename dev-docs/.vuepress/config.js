@@ -142,6 +142,14 @@ module.exports = {
                     '/read-books/what-life-should-mean-to-you.md'
                 ]
             }],
+            '/study/': [{
+                title: '学习',
+                collapsable: false,
+                children: [
+                    '',
+                    '/study/fanwei.md'
+                ]
+            }],
             '/component/': [{
                 title: '组件库',
                 collapsable: false,
