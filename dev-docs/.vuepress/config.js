@@ -3,6 +3,12 @@ module.exports = {
     base: '/tech-snail/',
     title: '蜗牛🐌不牛',
     description: '技术方面的沉淀，积累',
+    head: [
+        // add jquert and fancybox
+        ['script', { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js' }],
+        ['script', { src: 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.js' }],
+        ['link', { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.css' }]
+    ],
     themeConfig: {
         nav: [
         	{
