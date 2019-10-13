@@ -10,6 +10,7 @@ module.exports = {
         ['link', { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.css' }]
     ],
     themeConfig: {
+        lastUpdated: '上次更新',//string | boolean
         nav: [
         	{
 	            text: '基础',
@@ -45,6 +46,10 @@ module.exports = {
                     {
                         text: '乌龟计划',
                         link: '/snail/'
+                    },
+                    {
+                        text: '幸运草',
+                        link: '/four-leaf-clover/'
                     },
                     // {
                     //     text: '工具箱',
@@ -176,6 +181,15 @@ module.exports = {
         ['vuepress-plugin-baidu-google-analytics', {
           hm: '568d8cc1a88d56015fa25067311d5991',
           ignore_hash: false
-        }]
+        }],
+        ['@vuepress/last-updated',{
+            transformer: (timestamp, lang) => {
+              // 不要忘了安装 moment
+              const moment = require('moment')
+              moment.locale(lang)
+              return moment(timestamp).fromNow()
+            }
+          }
+        ]
     ]
 }
