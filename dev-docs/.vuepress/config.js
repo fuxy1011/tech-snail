@@ -12,8 +12,12 @@ module.exports = {
     themeConfig: {
         lastUpdated: '上次更新',//string | boolean
         nav: [
+            {
+	            text: 'Home',
+	            link: '/'
+        	},
         	{
-	            text: '基础',
+	            text: 'Base',
 	            link: '/base/'
         	},
         	// {
@@ -25,7 +29,7 @@ module.exports = {
                 link: '/react/'
             },
             {
-                text: 'snail',
+                text: 'Snail',
                 items: [
                     {
                         text: '蜗牛小册子',
@@ -73,7 +77,7 @@ module.exports = {
         sidebarDepth: 1,
         sidebar: {
             '/base/': [{
-                title: '基础',
+                title: 'Base',
                 collapsable: false,
                 children: [
                     '',

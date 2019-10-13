@@ -6,8 +6,6 @@
 * React技术栈
 * 粗布的技术广度
 
-![图片1](http://xyzdst.oss-cn-beijing.aliyuncs.com/fanwei/1_pic.png)
-
 ## 看点
 
 * [基础](/base/)  
