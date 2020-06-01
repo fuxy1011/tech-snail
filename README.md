@@ -1,4 +1,5 @@
 # tech-snail
+
 蜗牛不牛
 
 ## 概要说明
@@ -27,7 +28,7 @@ npm run docs:dev
 npm run docs:build
 ```
 
-- 部署到git page目录并提交到远端ß
+- 部署到 git page 目录并提交到远端 ß
 
 ```
 npm run deploy
@@ -36,17 +37,17 @@ npm run deploy
 ## 目录结构
 
 ```
-├── dev-docs                // webpack配置
-│   ├── .vuepress   		// vuepress配置目录
+├── dev-docs                // 开发目录
+│   ├── .vuepress           // vuepress配置目录
 │   ├── about               // 关于目录
-│   ├── assets      		// 资源库目录
-│   ├── base      			// 基础知识目录
-│   ├── component      		// 组件库
+│   ├── assets              // 资源库目录
+│   ├── base                // 基础知识目录
+│   ├── component           // 组件库
 │   ├── neritic-area        // 浅海区
 │   ├── deep-sea-area       // 深海区
 │   ├── four-leaf-clover    // 四叶草
 │   ├── important-base      // 烧脑基础
-│   ├── react      	        // react核心概念
+│   ├── react               // react核心概念
 │   ├── read-books          // 读书
 │   ├── snail               // 蜗牛计划
 │   ├── snail-book          // 蜗牛小册子
@@ -57,7 +58,7 @@ npm run deploy
 │   └── toolkit             // 工具箱
 ├── docs                    // 打包输出目录
 ├── 总结                     // 错误总结目录
-├── deploy.sh           	// 部署脚本
+├── deploy.sh               // 部署脚本
 ├── package.json            // 依赖包配置
 └── README.md               // 项目说明
 ```
