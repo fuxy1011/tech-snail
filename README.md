@@ -55,6 +55,7 @@ npm run deploy
 │   ├── study               // 持续学习，不服就干
 │   ├── tech-world          // 技术世界
 │   ├── todo-demo           // 实验室
+│   ├── calm-area           // 心静区
 │   └── toolkit             // 工具箱
 ├── docs                    // 打包输出目录
 ├── 总结                     // 错误总结目录
